@@ -1,0 +1,256 @@
+html {
+    font-size: 4vw;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* fonts */
+.inter {
+    font-family: 'Inter', sans-serif
+}
+
+.attribution {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    width: 90vw;
+    height: calc(90vw * 4);
+    margin: auto;
+    padding: 20vw 0;
+    grid-template-rows: 16% 12% 12% 12% 12% 12% 12%;
+    row-gap: 2%;
+}
+
+.card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.card-icon {
+    position: relative;
+    left: 65%;
+    top: -3%;
+}
+
+.ellipsis {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.ellipsis svg:hover {
+    cursor: pointer;
+}
+
+.ellipsis svg:hover path {
+    fill: #fff;
+}
+
+.card-back {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.card-front {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    z-index: 2;
+    background-color: #1c204b;
+    color: #fff;
+}
+
+.card-front-grid {
+    display: grid;
+    width: 85%;
+    height: 60%;
+    margin: 10% auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 60%;
+}
+
+.card-title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.card-current-period {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.card-previous-period {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #BBC0FF;
+}
+  
+/* 
+Profile card */
+.profile-card-back {
+    height: 100%;
+    grid-row: 1;
+    background-color: #1C204B;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #7078C9;
+}
+
+.profile-card-front {
+    grid-row: 1;
+    background-color: #5747ea;
+    height: 70%;
+    width: 100%;
+    z-index: 2;
+}
+
+.profile-pic {
+    display:inline-flex;
+    align-items: center;
+    margin-left: 7%;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+.pic {
+    width: 70%;
+    height: auto;
+    border: 2px white solid;
+    border-radius: 100%;
+}
+
+.profile-text {
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    top: -1.2rem;
+}
+
+.profile-text-intro {
+    color: #BBC0FF;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.profile-text-name {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.choose-daily,
+.choose-weekly,
+.choose-monthly {
+    font-weight: 300;
+    font-size: 1.125rem;
+    display: inline-block;
+    margin-top: 7%;
+    width: 32.5%;
+    text-align: center;
+    color: #7078C9;
+    text-decoration: none;
+}
+
+.choose-daily:visited,
+.choose-weekly:visited,
+.choose-monthly:visited {
+    color: #7078C9;
+    text-decoration: none;
+}
+
+.choose-daily:hover,
+.choose-weekly:hover,
+.choose-monthly:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+/*
+Work card */
+.work-card {
+    position: relative;
+    grid-row: 2;
+}
+
+.work-card-back {
+    background-color: #ff8b64;
+}
+
+/*
+Play card */
+.play-card {
+    position: relative;
+    grid-row: 3;
+}
+
+.play-card-back {
+    background-color: #55C2E6;
+}
+
+/*
+Study card */
+.study-card {
+    position: relative;
+    grid-row: 4;
+}
+
+.study-card-back {
+    background-color: #FF5E7D;
+}
+
+/*
+Exercise card */
+.exercise-card {
+    position: relative;
+    grid-row: 5;
+}
+
+.exercise-card-back {
+    background-color: #4BCF82;
+}
+
+/*
+Social card */
+.social-card {
+    position: relative;
+    grid-row: 6;
+}
+
+.social-card-back {
+    background-color: #7335D2;
+}
+
+/*
+Care card */
+.care-card {
+    position: relative;
+    grid-row: 7;
+}
+
+.care-card-back {
+    background-color: #F1C75B;
+}

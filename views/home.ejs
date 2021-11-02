@@ -1,0 +1,135 @@
+<%- include("partials/header"); -%>
+
+<div class="card work-card">
+  <div class="card card-back work-card-back">
+    <img src="images/icon-work.svg" class="card-icon" alt="work">
+  </div>
+  <div class="card card-front">
+    <div class="card-front-grid">
+      <div class="card-title">
+        Work
+      </div>
+      <div class="ellipsis">
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+            fill="#BBC0FF" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="card-current-period"><%= data[0].data.current %>hrs</div>
+      <div class="card-previous-period"><%= timeframe %> - <%= data[0].data.previous %>hrs</div>
+    </div>
+  </div>
+</div>
+
+<div class="card play-card">
+  <div class="card card-back play-card-back">
+    <img src="images/icon-play.svg" class="card-icon" alt="playk">
+  </div>
+  <div class="card card-front">
+    <div class="card-front-grid">
+      <div class="card-title">
+        Play
+      </div>
+      <div class="ellipsis">
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+            fill="#BBC0FF" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="card-current-period"><%= data[1].data.current %>hrs</div>
+      <div class="card-previous-period"><%= timeframe %> - <%= data[1].data.previous %>hrs</div>
+    </div>
+  </div>
+</div>
+
+<div class="card study-card">
+  <div class="card card-back study-card-back">
+    <img src="images/icon-study.svg" class="card-icon" alt="study">
+  </div>
+  <div class="card card-front">
+    <div class="card-front-grid">
+      <div class="card-title">
+        Study
+      </div>
+      <div class="ellipsis">
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+            fill="#BBC0FF" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="card-current-period"><%= data[2].data.current %>hrs</div>
+      <div class="card-previous-period"><%= timeframe %> - <%= data[2].data.previous %>hrs</div>
+    </div>
+  </div>
+</div>
+
+<div class="card exercise-card">
+  <div class="card card-back exercise-card-back">
+    <img src="images/icon-exercise.svg" class="card-icon" alt="exercise">
+  </div>
+  <div class="card card-front">
+    <div class="card-front-grid">
+      <div class="card-title">
+        Exercise
+      </div>
+      <div class="ellipsis">
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+            fill="#BBC0FF" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="card-current-period"><%= data[3].data.current %>hrs</div>
+      <div class="card-previous-period"><%= timeframe %> - <%= data[3].data.previous %>hrs</div>
+    </div>
+  </div>
+</div>
+
+<div class="card social-card">
+  <div class="card card-back social-card-back">
+    <img src="images/icon-social.svg" class="card-icon" alt="social">
+  </div>
+  <div class="card card-front">
+    <div class="card-front-grid">
+      <div class="card-title">
+        Social
+      </div>
+      <div class="ellipsis">
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+            fill="#BBC0FF" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="card-current-period"><%= data[4].data.current %>hrs</div>
+      <div class="card-previous-period"><%= timeframe %> - <%= data[4].data.previous %>hrs</div>
+    </div>
+  </div>
+</div>
+
+<div class="card care-card">
+  <div class="card card-back care-card-back">
+    <img src="images/icon-self-care.svg" class="card-icon" alt="self-care">
+  </div>
+  <div class="card card-front">
+    <div class="card-front-grid">
+      <div class="card-title">
+        Self-Care
+      </div>
+      <div class="ellipsis">
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+            fill="#BBC0FF" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="card-current-period"><%= data[5].data.current %>hrs</div>
+      <div class="card-previous-period"><%= timeframe %> - <%= data[5].data.previous %>hrs</div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,271 @@
+html {
+    font-size: 1.5vh;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* fonts */
+.inter {
+    font-family: 'Inter', sans-serif
+}
+
+.attribution {
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: #FF5E7D;
+}
+
+.grid-container {
+    display: grid;
+    width: 103vh;
+    height: 50vh;
+    margin: 24vh auto;
+    grid-template-columns: 22.75% 22.75% 22.75% 22.75%;
+    column-gap: 3%;
+    grid-template-rows: 47% 47%;
+    row-gap: 6%;
+}
+
+.card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.card-icon {
+    position: relative;
+    left: 65%;
+    top: -3%;
+}
+
+.ellipsis {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.ellipsis svg:hover {
+    cursor: pointer;
+}
+
+.ellipsis svg:hover path {
+    fill: #fff;
+}
+
+.card-back {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.card-front {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    z-index: 2;
+    background-color: #1c204b;
+    color: #fff;
+}
+
+.card-front-grid {
+    display: grid;
+    width: 85%;
+    height: 80%;
+    margin: 10% auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 50% 30%;
+}
+
+.card-title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.card-current-period {
+    display: flex;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.card-previous-period {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #BBC0FF;
+}
+  
+/* 
+Profile card */
+.profile-card-back {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: start;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-color: #1C204B;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #7078C9;
+}
+
+.profile-card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #5747ea;
+    height: 70%;
+    width: 100%;
+    z-index: 2;
+}
+
+.profile-pic {
+    height: 20%;
+    margin: 13% 11%;
+}
+
+.pic {
+    width: 45%;
+    height: auto;
+    border: 2px white solid;
+    border-radius: 100%;
+}
+
+.profile-text-intro {
+    margin: 11% 11% 3%;
+    color: #BBC0FF;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.profile-text-name {
+    margin-left: 11%;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.choose-daily,
+.choose-weekly,
+.choose-monthly {
+    margin-left: 11%;
+    color: #7078C9;
+    text-decoration: none;
+}
+
+.choose-daily:visited,
+.choose-weekly:visited,
+.choose-monthly:visited {
+    color: #7078C9;
+    text-decoration: none;
+}
+
+.choose-daily:hover,
+.choose-weekly:hover,
+.choose-monthly:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.choose-daily {
+    margin-top: 12%;
+}
+
+.choose-weekly {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.choose-monthly {
+    margin-bottom: 12%;
+}
+
+/*
+Work card */
+.work-card {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.work-card-back {
+    background-color: #ff8b64;
+}
+
+/*
+Play card */
+.play-card {
+    position: relative;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.play-card-back {
+    background-color: #55C2E6;
+}
+
+/*
+Study card */
+.study-card {
+    position: relative;
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.study-card-back {
+    background-color: #FF5E7D;
+}
+
+/*
+Exercise card */
+.exercise-card {
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.exercise-card-back {
+    background-color: #4BCF82;
+}
+
+/*
+Social card */
+.social-card {
+    position: relative;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.social-card-back {
+    background-color: #7335D2;
+}
+
+/*
+Care card */
+.care-card {
+    position: relative;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.care-card-back {
+    background-color: #F1C75B;
+}
